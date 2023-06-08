@@ -4,6 +4,7 @@
 <head>
     <!-- <meta charset="UTF-8"> -->
     <link rel="stylesheet" href='home.css' />
+    <link rel="icon" href="images/logo.png" type="image/png">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <title>Dragoslavic Fitness</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,14 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <section class="header">
         <nav>
             <a href="home.html"><img src="images/logo.png"></a>
-            <div class="page-links">
-                <i class="fa fa-times"></i>
+            <div class="page-links" id="pageLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">SELF CARE</a></li>
@@ -27,7 +29,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>Fitness Redefined. Your Way.</h1>
@@ -47,6 +49,18 @@
             <a href="" class="hero-btn"> Visit Us To Know More</a>
         </div>
     </section>
+
+    <script>
+        var pageLinks = document.getElementById("pageLinks")
+
+        function showMenu() {
+            pageLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            pageLinks.style.right = "-200px";
+        }
+    </script>
 
     <!-- SELF CARE -->
     <section class="self-care">
@@ -146,21 +160,11 @@
                         fitness goals effectively. The facility's commitment to maintaining a clean and well-maintained
                         environment ensures a pleasant and comfortable workout experience.</p>
                     <h3> Jonathan Forest</h3>
-                    <span class="material-symbols-outlined">
-                        star_rate
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star_rate
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star_rate
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star_rate
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star_rate
-                    </span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
                 </div>
             </div>
             <div class="testimonial-col">
@@ -173,20 +177,33 @@
                         community-building fosters a positive experience, making it a great fit for those seeking a
                         supportive fitness community.</p>
                     <h3> Kristie Hernandez</h3>
-                    <span class="material-symbols-outlined">
-                        star_rate
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star_rate
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star_rate
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star_rate
-                    </span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+
+    <section class="cta">
+        <h1>Join Us For a Better You</h1>
+        <a href="" class="hero-btn"> CONTACT US</a>
+    </section>
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Where else you can find us <i class="fa fa-heart-o"></i></p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
         </div>
     </section>
 </body>

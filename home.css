@@ -104,11 +104,11 @@ nav .fa {
 
 @media(max-width: 700px) {
     .text-box h1 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .text-box p {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .page-links ul li {
@@ -121,15 +121,25 @@ nav .fa {
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0px;
+        right: -200px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
     }
 
-    nav .fa {
+    nav .fa-times {
         display: block;
         color: #fff;
         margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    nav .fa-bars {
+        display: block;
+        color: #fff;
+        margin: 15px;
+        margin-top: -15px;
         font-size: 22px;
         cursor: pointer;
     }
@@ -186,6 +196,12 @@ h3 {
 .sc-col:hover {
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
 }
 
 /* LOCATIONS */
@@ -311,6 +327,67 @@ testimonial-col p {
     text-align: left;
 }
 
-.testimonial-col .material-symbols-outlined {
+.testimonial-col .fa {
     color: #3682f4;
+}
+
+@media(max-width: 700px) {
+    .testimonial-col p {
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .testimonial-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px) {
+    .cta h1 {
+        font-size: 24px;
+    }
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa {
+    color: #a5dcf1;
+    font-size: 20px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    transition: 0.5s;
+}
+
+.icons .fa:hover {
+    transform: scale(1.5);
+    color: #5495f7;
 }
