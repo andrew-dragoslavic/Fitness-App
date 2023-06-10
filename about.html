@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <link rel="stylesheet" href='home.css' />
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>Dragoslavic Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/logo.png"></a>
+            <div class="page-links" id="pageLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="">SELF CARE</a></li>
+                    <li><a href="">NUTRITION</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <script>
+        var pageLinks = document.getElementById("pageLinks")
+
+        function showMenu() {
+            pageLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            pageLinks.style.right = "-200px";
+        }
+    </script>
+
+
+    <!-- ABOUT US CONTENT -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Ranked Top 5 Best Facilities in the US</h1>
+                <p>
+                    At our esteemed gym, we take immense pride in being recognized as one of the top 5 facilities in the
+                    world. With a relentless commitment to providing an unrivaled fitness experience, we have
+                    meticulously crafted a space that surpasses expectations and redefines the meaning of excellence.
+
+                    From the moment you step foot into our gym, you'll be greeted by an atmosphere that exudes
+                    sophistication, luxury, and innovation. Our thoughtfully designed facility boasts state-of-the-art
+                    equipment, meticulously curated workout areas, and an ambiance that inspires and motivates. Every
+                    detail has been carefully considered to create an environment that elevates your fitness journey to
+                    new heights.
+
+                    But it's not just our remarkable physical attributes that set us apart. Our team of world-class
+                    trainers and coaches is dedicated to guiding you on your path to success. With their expertise,
+                    personalized attention, and unwavering support, they are committed to helping you achieve your goals
+                    and unlock your full potential. Whether you're a beginner taking your first steps towards a
+                    healthier lifestyle or a seasoned athlete aiming for new milestones, our team is here to empower you
+                    every step of the way.
+
+                    Join our thriving community of fitness enthusiasts who share a common pursuit of greatness.
+                    Together, we embrace a culture of excellence, pushing boundaries, and inspiring each other to reach
+                    new heights. As one of the top 5 facilities in</p>
+                <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/ranked.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Where else you can find us <i class="fa fa-heart-o"></i></p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+</body>
+
+</html>
