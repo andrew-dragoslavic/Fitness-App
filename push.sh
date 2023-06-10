@@ -1,5 +1,5 @@
 #!/bin/bash
-repo="origin"
+repo="https://github.com/andrew-dragoslavic/Fitness-App.git"
 commit="New Changes"
 branch="main"
 
