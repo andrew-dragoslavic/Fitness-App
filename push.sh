@@ -6,4 +6,5 @@ branch="main"
 git add .
 
 git commit -m "$commit"
-git push "$repo $branch"
+
+git push $repo $branch:$branch
