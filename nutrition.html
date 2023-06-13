@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <link rel="stylesheet" href='home.css' />
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>Dragoslavic Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header2">
+        <nav>
+            <a href="home.html"><img src="images/logo.png"></a>
+            <div class="page-links" id="pageLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="sc.html">SELF CARE</a></li>
+                    <li><a href="nutrition.html">NUTRITION</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Nutrition</h1>
+    </section>
+
+    <script>
+        var pageLinks = document.getElementById("pageLinks")
+
+        function showMenu() {
+            pageLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            pageLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-- NUTRITION CONTENT -->
+    <section class="nutrition-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/nutrition-content.jpg" >
+                <h2>Nutrition Stats</h2>
+                <p>Nutrition is the cornerstone of a healthy and thriving life. The food we consume directly impacts our overall well-being, from our physical health to our mental and emotional states. A balanced and nourishing diet is essential to provide our bodies with the necessary nutrients, vitamins, and minerals they need to function optimally. It is through proper nutrition that we fuel our bodies, support our immune system, promote healthy growth and development, and reduce the risk of chronic diseases.</p>
+                <br>
+                <p>The choices we make about what we eat have profound effects on our bodies. A diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats ensures a wide range of nutrients that support our bodily functions. Adequate nutrition strengthens our bones, muscles, and cardiovascular system, and it helps to maintain a healthy weight. Conversely, a poor diet high in processed foods, added sugars, and unhealthy fats can lead to obesity, heart disease, diabetes, and other health issues.</p>
+                <br>
+                <p>In addition to physical health, nutrition profoundly affects our mental and emotional well-being. Research has shown that certain nutrients, such as omega-3 fatty acids and B vitamins, play a crucial role in brain health, cognitive function, and mood regulation. By nourishing our brains with the right nutrients, we can enhance focus, concentration, and memory, while reducing the risk of mental health conditions such as depression and anxiety.</p>
+                <br>
+                <p>Cultivating healthy eating habits is a lifelong journey. It requires awareness, education, and mindful choices. Making informed decisions about the foods we consume empowers us to take control of our health and embrace a balanced lifestyle. By prioritizing nutrition, we invest in our long-term well-being, increase our energy levels, improve our quality of life, and set the stage for a healthier and happier future.</p>
+                <br>
+                <p>In conclusion, nutrition is the foundation of a healthy life. By embracing a well-balanced and nourishing diet, we can support our physical, mental, and emotional health. Through conscious choices and a commitment to lifelong wellness, we can unlock the transformative power of nutrition and experience the benefits of a vibrant and thriving existence.</p>
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn blue-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Calorie Statistics</h3>
+                <div>
+                    <span>Chicken</span>
+                    <span>165</span>
+                </div>
+                <div>
+                    <span>White Rice</span>
+                    <span>205</span>
+                </div>
+                <div>
+                    <span>Pasta</span>
+                    <span>200</span>
+                </div>
+                <div>
+                    <span>Broccoli</span>
+                    <span>55</span>
+                </div>
+                <div>
+                    <span>Cheese</span>
+                    <span>113</span>
+                </div>
+                <div>
+                    <span>Spinach</span>
+                    <span>7</span>
+                </div>
+                <div>
+                    <span>Eggs</span>
+                    <span>78</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Where else you can find us <i class="fa fa-heart-o"></i></p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+</body>
+
+</html>
