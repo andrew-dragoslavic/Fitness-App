@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <link rel="stylesheet" href='home.css' />
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>Dragoslavic Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header3">
+        <nav>
+            <a href="home.html"><img src="images/logo.png"></a>
+            <div class="page-links" id="pageLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="sc.html">SELF CARE</a></li>
+                    <li><a href="nutrition.html">NUTRITION</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- CONTACT US -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8991.916246700936!2d-73.98443948253852!3d40.73692457427061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599ef8ffc4af%3A0x68da68ab39a0ce15!2s3%20Av!5e0!3m2!1sen!2sus!4v1686703246842!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>105 3rd Avenue</h5>
+                        <p>New York, New York</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1 (201)-332-4681</h5>
+                        <p>Everyday 8AM to 8PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>support@dragosfit.com</h5>
+                        <p>Email us your questions</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name = "name" placeholder="Enter Your Name" required>
+                    <input type="email" name = "email" placeholder="Enter Your Email Address" required>
+                    <input type="text" name = "subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name = "message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn blue-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var pageLinks = document.getElementById("pageLinks")
+
+        function showMenu() {
+            pageLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            pageLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Where else you can find us <i class="fa fa-heart-o"></i></p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+</body>
+
+</html>
